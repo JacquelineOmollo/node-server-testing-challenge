@@ -1,6 +1,7 @@
 const express = require("express");
 const Books = require("../bookList/booksModel");
 const server = express();
+server.use(express.json());
 
 server.get("/", (req, res) => {
   res.status(200).json({ api: "running" });

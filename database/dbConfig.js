@@ -1,5 +1,5 @@
 knex = require("knex");
-config = require("../../knexfile");
+config = require("../knexfile");
 
 const environment = process.env.DB_ENV || "development";
 
